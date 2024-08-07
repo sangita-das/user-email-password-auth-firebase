@@ -25,7 +25,7 @@ const HeroLogin = () => {
           // add validation
           signInWithEmailAndPassword(auth, email, password)
           .then(result => {
-            console.log(result.usesr)
+            console.log(result.user)
             if(result.user.emailVerified){
                 setSuccess('user logged in successfully.')
             }
